@@ -4,8 +4,8 @@ import time
 import os
 
 
-if not os.path.exists(rf'W:\PhotoDay\Collection'):
-    os.makedirs(rf'W:\PhotoDay\Collection', exist_ok=True)
+if not os.path.exists(rf'C:\PhotoDay\Collection'):
+    os.makedirs(rf'C:\PhotoDay\Collection', exist_ok=True)
 
 
 now = datetime.now()
@@ -24,7 +24,7 @@ if not ret:
     print("Capture error=(")
     exit()
 
-save_path = rf'W:\PhotoDay\Collection\photo{datenow}.jpg'
+save_path = rf'C:\PhotoDay\Collection\photo{datenow}.jpg'
 print(save_path)
 
 cv2.imwrite(save_path, frame)
